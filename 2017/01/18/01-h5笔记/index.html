@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>水杯 | bobplay</title>
+  <title>bobplay</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -172,34 +172,66 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2017-01-17T15:00:53.400Z" itemprop="datePublished">
-          2017-01-17
+      <time datetime="2017-01-18T13:06:52.695Z" itemprop="datePublished">
+          2017-01-18
       </time>
     
 </span>
-                <h1>水杯</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+      		<h2 id="1-占位文本"><a href="#1-占位文本" class="headerlink" title="1.占位文本"></a>1.占位文本</h2><pre><code>lorem+tab
+</code></pre><h2 id="2-新标签-兼容性问题W3C查询-IE低版本不支持-IE8以上支持"><a href="#2-新标签-兼容性问题W3C查询-IE低版本不支持-IE8以上支持" class="headerlink" title="2.新标签(兼容性问题W3C查询,IE低版本不支持,IE8以上支持)"></a>2.新标签(兼容性问题W3C查询,IE低版本不支持,IE8以上支持)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">header</div><div class="line">   | nav</div><div class="line">main      --IE不支持        </div><div class="line">   | aside</div><div class="line">   | article</div><div class="line">		|section</div><div class="line">		|section</div><div class="line">footer</div></pre></td></tr></table></figure>
+<h2 id="3-低版本IE如何使用新语义标签"><a href="#3-低版本IE如何使用新语义标签" class="headerlink" title="3.低版本IE如何使用新语义标签"></a>3.低版本IE如何使用新语义标签</h2><h4 id="解决方法-js创建"><a href="#解决方法-js创建" class="headerlink" title="解决方法:js创建"></a>解决方法:js创建</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var headerDom = document.createElement(&quot;header&quot;);</div><div class="line">	document.body.appendChild(headerDom);</div><div class="line">	headerDom.style.display = &quot;block&quot;;</div></pre></td></tr></table></figure>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意:"></a>注意:</h4><ul>
+<li>只创建出不来的,只有display = block才可以</li>
+</ul>
+<h4 id="问题-创建出来后-高版本会出现两个"><a href="#问题-创建出来后-高版本会出现两个" class="headerlink" title="问题:创建出来后,高版本会出现两个"></a>问题:创建出来后,高版本会出现两个</h4><h5 id="解决办法-条件判断-快捷方式cc-ie6-tab"><a href="#解决办法-条件判断-快捷方式cc-ie6-tab" class="headerlink" title="解决办法:条件判断   快捷方式cc:ie6  + tab"></a>解决办法:条件判断   快捷方式cc:ie6  + tab</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;!--[if lte IE 6]&gt;</div><div class="line">	&lt;script &gt;</div><div class="line">    var headerDom = document.createElement(&quot;header&quot;);</div><div class="line">    document.body.appendChild(headerDom);</div><div class="line">    headerDom.style.display = &quot;block&quot;;</div><div class="line">    console.log(&quot;调用了&quot;);</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div></pre></td></tr></table></figure>
+<p><strong>每次都需要新创建,很繁琐所以使用html5shiv.min.js</strong></p>
+<ul>
+<li><!-- 相当于 帮助我们实现了 创建 添加 displayblock的操作 --></li>
+<li><!-- 通过 条件注释  让 这个js文件 在指定的 IE版本中 才被加载  -->
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;!--[if lte IE 8]&gt;</div><div class="line">  &lt;script src=&apos;js/html5shiv.min.js&apos;&gt;&lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div></pre></td></tr></table></figure>
+<p><strong>==注意==</strong>:必须放在header中</p>
+<h2 id="4-多媒体标签"><a href="#4-多媒体标签" class="headerlink" title="4.多媒体标签"></a>4.多媒体标签</h2><p>video视频   audio音频</p>
+<ul>
+<li>通过 source 指定多个视频</li>
+<li>浏览器冲上往下解析 找到能播放的 即开始播放</li>
+<li>目的是 为了 让不同的浏览器都能够播放</li>
+<li>HTML5的多媒体标签 能够直接被用户另存为 保存视频 音频也是一样的</li>
+<li>主流的还是flash 来播放</li>
+<li>video播放的是 短视频 不牵扯到 版权的 广告,宣传片</li>
+<li>移动端 大部分的多媒体播放 都是使用 video  audio播放</li>
+<li>自带的controls 在不同的浏览器显示效果不同</li>
+<li>为了保证用户体验,保证显示效果 一般是自定义播放器的控制栏</li>
+<li>需要配合js 去操纵 video标签</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;video autoplay controls&gt;</div><div class="line">  &lt;source src=&quot;movie/rabbit.ogg&quot; type=&quot;&quot;&gt;</div><div class="line">  &lt;source src=&quot;movie/move11.mp4&quot; type=&quot;&quot;&gt;</div><div class="line">  亲,你的浏览器该换换啦,&lt;a href=&quot;#&quot;&gt;戳我下载哦 ^_^&lt;/a&gt;</div><div class="line">&lt;/video&gt;</div></pre></td></tr></table></figure>
+<h2 id="5-自定义进度条"><a href="#5-自定义进度条" class="headerlink" title="5.自定义进度条"></a>5.自定义进度条</h2><ul>
+<li>先获取需要修改的dom元素</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var stepDom = document.getElementById(&apos;step&apos;);</div></pre></td></tr></table></figure>
+<ul>
+<li>滑动滑块 会一直触发</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">document.getElementById(&apos;range&apos;).oninput = function()&#123;</div><div class="line">  var value = this.value;</div><div class="line">   // 超过了 50 变黄</div><div class="line">   if(value&gt;50)&#123;</div><div class="line">     stepDom.style.backgroundColor =&apos;yellow&apos;;</div><div class="line">   &#125;else&#123;</div><div class="line">     // 小于50变绿</div><div class="line">     stepDom.style.backgroundColor =&apos;green&apos;;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>修改进度条的 width属性 </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">stepDom.style.width = value +&apos;%&apos;;</div></pre></td></tr></table></figure>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2017/01/18/01-h5笔记/" style="float: left;">
-        ← 
-    </a>
     
+    <a class="pull-right" href="/2017/01/17/hello-world/">
+        水杯 →
+    </a>
     
 </nav>
 
