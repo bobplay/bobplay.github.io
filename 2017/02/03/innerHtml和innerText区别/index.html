@@ -6,14 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | bobplay</title>
+  <title>bobplay</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="innerHtml和innerText区别* innerHTML和innerText的区别1234567891011121314151617var pHtml =  document.getElementById(&amp;quot;pObj&amp;quot;).innerHTML;   var pText = document.getElementById(&amp;quot;pObj&amp;quot;).innerTex">
+<meta property="og:type" content="article">
 <meta property="og:title" content="bobplay">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/02/03/innerHtml和innerText区别/index.html">
 <meta property="og:site_name" content="bobplay">
+<meta property="og:description" content="innerHtml和innerText区别* innerHTML和innerText的区别1234567891011121314151617var pHtml =  document.getElementById(&amp;quot;pObj&amp;quot;).innerHTML;   var pText = document.getElementById(&amp;quot;pObj&amp;quot;).innerTex">
+<meta property="og:image" content="http://yoursite.com/C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\e99576eb76f74ec1b5aef9c697eb42a3\clipboard.png">
+<meta property="og:image" content="http://yoursite.com/C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\756eb014d9f441b7956546beeb8fff8e\clipboard.png">
+<meta property="og:image" content="http://yoursite.com/C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\0eeb1871326147fbb22ae537c04d886b\clipboard.png">
+<meta property="og:updated_time" content="2017-01-29T06:29:57.577Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bobplay">
+<meta name="twitter:description" content="innerHtml和innerText区别* innerHTML和innerText的区别1234567891011121314151617var pHtml =  document.getElementById(&amp;quot;pObj&amp;quot;).innerHTML;   var pText = document.getElementById(&amp;quot;pObj&amp;quot;).innerTex">
+<meta name="twitter:image" content="http://yoursite.com/C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\e99576eb76f74ec1b5aef9c697eb42a3\clipboard.png">
   
     <link rel="alternative" href="/atom.xml" title="bobplay" type="application/atom+xml">
   
@@ -149,236 +157,143 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-innerHtml和innerText区别" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="innerHtml和innerText区别"><a href="#innerHtml和innerText区别" class="headerlink" title="innerHtml和innerText区别"></a>innerHtml和innerText区别</h2><p>* innerHTML和innerText的区别<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var pHtml =  document.getElementById(&quot;pObj&quot;).innerHTML;</div><div class="line"></div><div class="line">   var pText = document.getElementById(&quot;pObj&quot;).innerText;</div><div class="line"></div><div class="line">​    console.log(pHtml);</div><div class="line"></div><div class="line">​    console.log(pText);</div><div class="line"></div><div class="line">​    console.log(&quot;==========&quot;);</div><div class="line"></div><div class="line">   var dvHtml =  document.getElementById(&quot;dv&quot;).innerHTML;</div><div class="line"></div><div class="line">   var dvText = document.getElementById(&quot;dv&quot;).innerText;</div><div class="line"></div><div class="line">   console.log(dvHtml);</div><div class="line"></div><div class="line">   console.log(dvText);</div></pre></td></tr></table></figure></p>
+<p>> 输出如下:</p>
+<p><img src="C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\e99576eb76f74ec1b5aef9c697eb42a3\clipboard.png" alt="img"></p>
+<p>​    //设置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">​    document.getElementById(&quot;pObj&quot;).innerHTML = &quot;&lt;a href=&apos;#&apos;&gt;使用HTML设置标签+内容&lt;/a&gt;&quot;;</div></pre></td></tr></table></figure></p>
+<p>> 输出如下:</p>
+<p><img src="C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\756eb014d9f441b7956546beeb8fff8e\clipboard.png" alt="img"></p>
+<p>​  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">​    document.getElementById(&quot;pObj&quot;).innerText = &quot;&lt;a href=&apos;#&apos;&gt;使用HTML设置标签+内容&lt;/a&gt;&quot;;</div></pre></td></tr></table></figure></p>
+<p>> 输出如下:</p>
+<p><img src="C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\0eeb1871326147fbb22ae537c04d886b\clipboard.png" alt="img"></p>
+<p>总结:<br>innerHtml可以设置标签+内容<br>innerText也可以设置标签+内容但是标签会被转义</p>
+<p>兼容:<br>innerText支持IE8<br>innerHtml没有兼容问题</p>
+<p>```</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/数组常用的方法/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.565Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/03/innerHtml和innerText区别/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/浏览器对象/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.564Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/渐变,背景,边框/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.563Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2017/02/03/transform 3D/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/02/03/DOM获取页面元素/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/变量在对象中的体现/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.562Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/百度新闻广告/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.561Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/transform 3D/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.560Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/innerHtml和innerText区别/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.559Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/DOM获取页面元素/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.558Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/DOM创建元素的三种方式/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.557Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/css3 弹性布局/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.556Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
+    <div class="duoshuo"></div>
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/page/2/">Next &raquo;</a>
-    </nav>
-  
+
 
 
           </div>
@@ -401,8 +316,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

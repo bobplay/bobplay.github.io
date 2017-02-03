@@ -8,12 +8,46 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>bobplay</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="1.渐变1background-image: linear-gradient(to bottom,gray,white);
+
+顾名思义,就是朝着某个方向发生进行渐变    
+
+
+语法:
+** background-image: linear-gradient(方向,开始颜色 开始位置 ,颜色2 开始位置,颜色3 开始位置…..);
+/ 具体代码  // 朝着 右上角 从红色到黄色/backgrou">
+<meta property="og:type" content="article">
 <meta property="og:title" content="bobplay">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/02/03/渐变,背景,边框/index.html">
 <meta property="og:site_name" content="bobplay">
+<meta property="og:description" content="1.渐变1background-image: linear-gradient(to bottom,gray,white);
+
+顾名思义,就是朝着某个方向发生进行渐变    
+
+
+语法:
+** background-image: linear-gradient(方向,开始颜色 开始位置 ,颜色2 开始位置,颜色3 开始位置…..);
+/ 具体代码  // 朝着 右上角 从红色到黄色/backgrou">
+<meta property="og:image" content="http://yoursite.com/imgs/image_1an0e8vgc1n4i9veu7jtb6toq9.png">
+<meta property="og:image" content="http://yoursite.com/imgs/image_1an0fif8v18kfh2t1ule19001f7m9.png">
+<meta property="og:image" content="http://yoursite.com/imgs/image_1an0fjmiqecp1m5e18a8f9ic0m.png">
+<meta property="og:image" content="http://yoursite.com/imgs/image_1an0fsv74cj8vu7hdbj7hnhm9.png">
+<meta property="og:image" content="http://yoursite.com/imgs/image_1an0e8vgc1n4i9veu7jtb6toq9.png">
+<meta property="og:image" content="http://yoursite.com/imgs/image_1an0fif8v18kfh2t1ule19001f7m9.png">
+<meta property="og:image" content="http://yoursite.com/imgs/image_1an0fjmiqecp1m5e18a8f9ic0m.png">
+<meta property="og:image" content="http://yoursite.com/imgs/image_1an0fsv74cj8vu7hdbj7hnhm9.png">
+<meta property="og:updated_time" content="2017-01-29T08:31:50.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bobplay">
+<meta name="twitter:description" content="1.渐变1background-image: linear-gradient(to bottom,gray,white);
+
+顾名思义,就是朝着某个方向发生进行渐变    
+
+
+语法:
+** background-image: linear-gradient(方向,开始颜色 开始位置 ,颜色2 开始位置,颜色3 开始位置…..);
+/ 具体代码  // 朝着 右上角 从红色到黄色/backgrou">
+<meta name="twitter:image" content="http://yoursite.com/imgs/image_1an0e8vgc1n4i9veu7jtb6toq9.png">
   
     <link rel="alternative" href="/atom.xml" title="bobplay" type="application/atom+xml">
   
@@ -149,120 +183,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-数组常用的方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="splice"><a href="#splice" class="headerlink" title="splice"></a>splice</h2><blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;  splice(开始的索引,长度);从开始的位置截取数组元素.截取指定长度的个数,返回的是截取后的新的数组</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr=[12,33,211,34,32];</div><div class="line">var arrNew = arr.splice(1,2);</div><div class="line">console.log(arrNew);//[33,211]</div><div class="line">console.log(arr);//[12,34,32]</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">reverse()反转的</div><div class="line">sort()排序,一般回传入一个回调函数,可以比较字符串也可以比较数字</div><div class="line">indexOf(元素);返回的饿时该元素的索引，如果找不到则返回-1</div><div class="line">lastIndexOf(元素);同上</div><div class="line">every(函数)方法,判断数组中的每个元素是否符合函数中的判断,如果每个元素都满足条件则返回true,否则返回false</div><div class="line">map(函数),让数组中的每个元素都执行一次函数,把得到的返回值组成一个新的数组</div><div class="line">filter(函数),让数组中的每个元素都要执行函数,把满足条件的元素存放在一个新的数组中</div><div class="line">foreach(函数);遍历的</div><div class="line">join(字符串);把数组中的每个元素之间用指定的字符串进行连接.返回一个新的字符串</div><div class="line">预解析:浏览器在解析代码之前把变量的声明和函数的声明提前</div><div class="line">分段:多对的script标签中有相同的函数,相互之间不影响</div><div class="line">在函数内部变量的提升只能提升到该函数内部的最上面    </div><div class="line">基本包装类型:String,Number,Boolean</div><div class="line">基本类型:string,number,boolean,null,undefined</div><div class="line">普通变量无法直接调用属性和方法</div><div class="line">对象才可以直接调用属性或者方法</div></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/数组常用的方法/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-浏览器对象" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="window"><a href="#window" class="headerlink" title="window"></a>window</h2><ol>
-<li><p>window 对象不但充当全局作用域, 而且表示浏览器窗口</p>
-</li>
-<li><p>window对象是JavaScript中的顶级对象所有定义在全局作用域中的变量、函数都会变成window对象的属性和方法</p>
-</li>
-<li><p>window对象下的属性和方法调用的时候可以省略window</p>
-</li>
-</ol>
-<ul>
-<li><p>window对象有innerWidth和innerHeight属性，可以获取浏览器窗口的内部宽度和高度。内部宽高是指除去菜单栏、工具栏、边框等占位元素后，用于显示网页的净宽高。</p>
-</li>
-<li><p>对应的，还有一个outerWidth和outerHeight属性，可以获取浏览器窗口的整个宽高。</p>
-</li>
-</ul>
-<h3 id="1-navigator"><a href="#1-navigator" class="headerlink" title="1.navigator"></a>1.navigator</h3><ul>
-<li><p>可以获取浏览器的一些信息</p>
-</li>
-<li><p>navigator.appName：浏览器名称；</p>
-</li>
-<li>navigator.appVersion：浏览器版本；</li>
-<li>navigator.language：浏览器设置的语言；</li>
-<li>navigator.platform：操作系统类型；</li>
-<li>navigator.userAgent：浏览器设定的User-Agent字符串。</li>
-</ul>
-<h3 id="2-location"><a href="#2-location" class="headerlink" title="2.location"></a>2.location</h3><p>location对象表示当前页面的URL信息<br>一个完整的url获取方式:</p>
-<ul>
-<li>location.href</li>
-</ul>
-<p>获取url部分的值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">location.protocol; // &apos;http&apos;</div><div class="line">location.host; // &apos;www.example.com&apos;</div><div class="line">location.port; // &apos;8080&apos;</div><div class="line">location.pathname; // &apos;/path/index.html&apos;</div><div class="line">location.search; // &apos;?a=1&amp;b=2&apos;</div><div class="line">location.hash; // &apos;TOP&apos;</div></pre></td></tr></table></figure></p>
-<p>刷新页面:</p>
-<ul>
-<li>location.reload()    重新加载</li>
-</ul>
-<h3 id="3-screen"><a href="#3-screen" class="headerlink" title="3.screen"></a>3.screen</h3><p>screen对象表示屏幕的信息，常用的属性有：</p>
-<p>screen.width：屏幕宽度，以像素为单位；<br>screen.height：屏幕高度，以像素为单位；</p>
-<h3 id="history"><a href="#history" class="headerlink" title="history"></a>history</h3><p>history对象保存了浏览器的历史记录,后退:location.forward()  前进:location.back()</p>
-<p>可以跳转页面,内容会保存到浏览器的历史记录中(可以前进或者后退)</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/浏览器对象/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-渐变,背景,边框" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-渐变,背景,边框" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
@@ -580,49 +501,26 @@
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/渐变,背景,边框/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-变量在对象中的体现" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="变量在对象中的体现"><a href="#变量在对象中的体现" class="headerlink" title="变量在对象中的体现"></a>变量在对象中的体现</h2><p>先体验下对象在内存中</p>
-<p>当var s2 = s1时,在栈中s2开辟了与s1地址相同的地址,并且指向Student对象</p>
-<p><img src="E:\WebDev\2017HomeWork\笔记\img\new1.png" alt="img"></p>
-<p>变量在内存中</p>
-<p>变量直接改变的是值</p>
-<p><img src="E:\WebDev\2017HomeWork\笔记\img\new2.png" alt="img"></p>
-<h2 id="JS-new-一个对象发生了什么"><a href="#JS-new-一个对象发生了什么" class="headerlink" title="JS new 一个对象发生了什么?"></a>JS new 一个对象发生了什么?</h2><p>1.内存开辟空间,存储新创建的对象new Object()<br>2.会把this设置为当前对象<br>3.执行函数内部的代码,设置对象的属性和方法<br>4.返回新创建的对象</p>
-<p>记忆法:<br>构造方法的<br>目的:创建对象   new创建对象<br>改变this.让this等于当前对象<br>执行构造函数里面的属性和方法代码<br>返回创建的对象</p>
-<h2 id="this的使用"><a href="#this的使用" class="headerlink" title="this的使用"></a>this的使用</h2><p>必须在函数内部<br>在函数中指当前调用函数的对象<br>在构造方法中指当前构造函数创建的对象 </p>
-
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -631,18 +529,83 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/变量在对象中的体现/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/03/渐变,背景,边框/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
+  
+<nav id="article-nav">
+  
+    <a href="/2017/02/03/浏览器对象/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/02/03/变量在对象中的体现/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
@@ -650,348 +613,10 @@
 
 
   
-    <article id="post-百度新闻广告" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="百度新闻广告"><a href="#百度新闻广告" class="headerlink" title="百度新闻广告"></a>百度新闻广告</h2><p>1.获取方式</p>
-<p>![img](1.获取方式</p>
-<p><img src="E:\WebDev\2017HomeWork\笔记\img\baidu.png" alt="img"></p>
-<p>2.</p>
-<p><img src="E:\WebDev\2017HomeWork\笔记\img\baidusave.png" alt="img"></p>
-<p>3.document.write()作用:</p>
-<p>a.创建元素</p>
-<p>b.嵌入广告</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/百度新闻广告/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
+    <div class="duoshuo"></div>
   
-    <article id="post-transform 3D" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="3D旋转"><a href="#3D旋转" class="headerlink" title="3D旋转"></a>3D旋转</h2><p>伸出左手:<br>    大拇指指向旋转轴方向,其余四个手指弯曲的方向就是旋转的方向</p>
-<pre><code>transform: rotateX(45deg)/* X方向旋转45度*/
-</code></pre><p>​<br>    transform: rotateY(45deg)/<em> Y方向旋转45度</em>/</p>
-<pre><code>transform: rotateZ(45deg)/* Z方向旋转45度*/
-</code></pre><p>​    </p>
-<h2 id="视角"><a href="#视角" class="headerlink" title="视角"></a>视角</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">/*直接添加给transform:标签 距离 显示屏 1000px*/</div><div class="line">transform:perspective(1000px)</div><div class="line"></div><div class="line">/*直接使用perspective 属性赋值:标签 距离 显示屏 1000px*/</div><div class="line">perspective:1000px 添加到祖先元素中</div></pre></td></tr></table></figure>
-<h2 id="3D样式"><a href="#3D样式" class="headerlink" title="3D样式"></a>3D样式</h2><p>手动开启3D:<br>transform-style: preserve-3d;</p>
-<p>只能加到父元素中</p>
-<h2 id="图片边框"><a href="#图片边框" class="headerlink" title="图片边框"></a>图片边框</h2><ul>
-<li><p>语法<br>border-image: url(“img/border_image_2.png”) 17 / 17px / 17px round;</p>
-<p>​</p>
-<blockquote>
-<p>组成属性</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="transform属性赋值先后问题"><a href="#transform属性赋值先后问题" class="headerlink" title="transform属性赋值先后问题"></a>transform属性赋值先后问题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">div &#123;</div><div class="line">            width: 50px;</div><div class="line">            height: 50px;</div><div class="line">            background-color: pink;</div><div class="line">            transition:all 1s;</div><div class="line">        &#125;</div><div class="line">        div:nth-child(1):hover&#123;</div><div class="line">         /*先选转,然后移动*/</div><div class="line">        transform:rotate(45deg) translate(100px,0);</div><div class="line"></div><div class="line">        &#125;</div><div class="line">        div:nth-child(2):hover&#123;</div><div class="line">         /*先移动 然后先选转*/</div><div class="line">        transform:translate(100px,0) rotate(45deg);</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
-<h2 id="slice"><a href="#slice" class="headerlink" title="slice"></a>slice</h2><blockquote>
-<p>设置或检索对象的边框背景图的分割方式。<br>该属性指定从上，右，下，左方位来分隔图像，将图像分成4个角，4条边和中间区域共9份，中间区域始终是透明的（即没图像填充），除非加上关键字 fill。 </p>
-</blockquote>
-<h2 id="border-image-repeat属性"><a href="#border-image-repeat属性" class="headerlink" title="border-image-repeat属性"></a>border-image-repeat属性</h2><ul>
-<li>值:<ul>
-<li>stretch(拉伸默认) 或 repeat(重复) 或 round(环绕)<br>stretch： 指定用拉伸方式来填充边框背景图。<br>repeat： 指定用平铺方式来填充边框背景图。当图片碰到边界时，如果超过则被截断。<br>round： 指定用平铺方式来填充边框背景图。图片会根据边框的尺寸动态调整图片的大小直至正好可以铺满整个边框。 (常用的)<br>space： 指定用平铺方式来填充边框背景图。图片会根据边框的尺寸动态调整图片的之间的间距直至正好可以铺满整个边框。 </li>
-</ul>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/transform 3D/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
 
 
-
-
-
-
-
-
-  
-    <article id="post-innerHtml和innerText区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="innerHtml和innerText区别"><a href="#innerHtml和innerText区别" class="headerlink" title="innerHtml和innerText区别"></a>innerHtml和innerText区别</h2><p>* innerHTML和innerText的区别<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var pHtml =  document.getElementById(&quot;pObj&quot;).innerHTML;</div><div class="line"></div><div class="line">   var pText = document.getElementById(&quot;pObj&quot;).innerText;</div><div class="line"></div><div class="line">​    console.log(pHtml);</div><div class="line"></div><div class="line">​    console.log(pText);</div><div class="line"></div><div class="line">​    console.log(&quot;==========&quot;);</div><div class="line"></div><div class="line">   var dvHtml =  document.getElementById(&quot;dv&quot;).innerHTML;</div><div class="line"></div><div class="line">   var dvText = document.getElementById(&quot;dv&quot;).innerText;</div><div class="line"></div><div class="line">   console.log(dvHtml);</div><div class="line"></div><div class="line">   console.log(dvText);</div></pre></td></tr></table></figure></p>
-<p>> 输出如下:</p>
-<p><img src="C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\e99576eb76f74ec1b5aef9c697eb42a3\clipboard.png" alt="img"></p>
-<p>​    //设置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">​    document.getElementById(&quot;pObj&quot;).innerHTML = &quot;&lt;a href=&apos;#&apos;&gt;使用HTML设置标签+内容&lt;/a&gt;&quot;;</div></pre></td></tr></table></figure></p>
-<p>> 输出如下:</p>
-<p><img src="C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\756eb014d9f441b7956546beeb8fff8e\clipboard.png" alt="img"></p>
-<p>​  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">​    document.getElementById(&quot;pObj&quot;).innerText = &quot;&lt;a href=&apos;#&apos;&gt;使用HTML设置标签+内容&lt;/a&gt;&quot;;</div></pre></td></tr></table></figure></p>
-<p>> 输出如下:</p>
-<p><img src="C:\Users\zhangpeilei\AppData\Local\YNote\data\qq512207624441BAF7E24789AAFF704403\0eeb1871326147fbb22ae537c04d886b\clipboard.png" alt="img"></p>
-<p>总结:<br>innerHtml可以设置标签+内容<br>innerText也可以设置标签+内容但是标签会被转义</p>
-<p>兼容:<br>innerText支持IE8<br>innerHtml没有兼容问题</p>
-<p>```</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/innerHtml和innerText区别/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-DOM获取页面元素" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-javaScript介绍"><a href="#1-javaScript介绍" class="headerlink" title="1.javaScript介绍"></a>1.javaScript介绍</h2><p> JavaScript组成:</p>
-<pre><code>1.ECMAScript标准
-</code></pre><p>​     2.DOM–Document Object Model 文档对象模型</p>
-<pre><code>3.BOM
-</code></pre><h2 id="2-获取页面元素"><a href="#2-获取页面元素" class="headerlink" title="2.获取页面元素"></a>2.获取页面元素</h2><p>1.根据id获取元素—获取的是一个<br>  document.getElementById(“id的值”)<br>2.根据标签名字获取元素—获取的是一个数组(伪数组)<br>  document.getElementsByTagName(“标签的名字”)<br>3.根据类名获取元素<br>  document.getElementsByClassName(“className”);<br>4.根据name属性<br>  document.getElementsByName(“name”);</p>
-<h2 id="3-事件三要素"><a href="#3-事件三要素" class="headerlink" title="3.事件三要素"></a>3.事件三要素</h2><ul>
-<li>事件三要素：<ul>
-<li>事件源 ：要触发的对象  （一般是名词，事件发起者，比如开关按钮）</li>
-<li>事件：怎么触发这个事情  （一般是动词，触发事件，比如点击开关）</li>
-<li>事件处理程序:发生了什么事情 （处理结果，比如灯亮了）</li>
-</ul>
-</li>
-</ul>
-<h2 id="4-超链接跳转点击默认的点击事件"><a href="#4-超链接跳转点击默认的点击事件" class="headerlink" title="4.超链接跳转点击默认的点击事件"></a>4.超链接跳转点击默认的点击事件</h2><p><img src="img/取消默认事件.png"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/DOM获取页面元素/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-DOM创建元素的三种方式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="DOM创建元素的三种方式"><a href="#DOM创建元素的三种方式" class="headerlink" title="DOM创建元素的三种方式"></a>DOM创建元素的三种方式</h3><p>动态创建元素三种方式：</p>
-<ul>
-<li><p>1.</p>
-<p>document.write(“标签+内容的代码”);</p>
-</li>
-<li><p>2.</p>
-<p>对象.innerHTML=”标签+内容的代码”;</p>
-</li>
-<li><p>3.</p>
-<p>document.createElement(“标签名字”);</p>
-</li>
-</ul>
-<ul>
-<li><p>总结:</p>
-<ul>
-<li><p>1.很少用,一般用在广告的嵌入</p>
-</li>
-<li><p>2.一般用在大量字符串拼接创建元素</p>
-</li>
-<li><p>3.一般用在创建少数元素</p>
-</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>使用appendChildren()追加创建元素的问题</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//1.无则创建</div><div class="line">//        if(!my$(&quot;p1&quot;))&#123;//判断页面中是否存在这个元素,如果存在则结果为true,否则为false</div><div class="line">//            var pObj=document.createElement(&quot;p&quot;);</div><div class="line">//            pObj.id=&quot;p1&quot;;</div><div class="line">//            pObj.innerText=&quot;其实我喜欢蓝莓&quot;;</div><div class="line">//            my$(&quot;dv&quot;).appendChild(pObj);</div><div class="line">//        &#125;</div><div class="line">        //2.有则删除</div><div class="line">        if(my$(&quot;p1&quot;))&#123;</div><div class="line">            my$(&quot;dv&quot;).removeChild(my$(&quot;p1&quot;));</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/DOM创建元素的三种方式/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-css3 弹性布局" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="css3-弹性布局"><a href="#css3-弹性布局" class="headerlink" title="css3 弹性布局"></a>css3 弹性布局</h2><blockquote>
-<p>开启弹性布局</p>
-</blockquote>
-<p>父元素中开启: display:flex;</p>
-<p>设置了该属性,称盒子为弹性盒子,子元素应用了弹性布局</p>
-<p>开启了弹性布局之后,能够非常方便的设置子元素的位置</p>
-<blockquote>
-<p>两大轴</p>
-</blockquote>
-<p>弹性布局开启之后,默认分为两大轴</p>
-<p>主轴   默认指的是从左往右 x方向</p>
-<p>副轴   默认指的是从上往下 y方向</p>
-<blockquote>
-<p>设置主轴内容的对齐方式</p>
-</blockquote>
-<p>justify-content—&gt;意思是为内容进行布局设置</p>
-<ul>
-<li>justify-content:flex-end;(主轴的末尾)</li>
-<li>justify-content:flex-start;(主轴的开始)</li>
-<li>justify-content:center;(主轴的中间)</li>
-<li>justify-content:space-around;(会预留一些间隙,但不会顶格)</li>
-<li>justify-content:space-between;(会预留一些间隙且两遍会顶格)</li>
-</ul>
-<blockquote>
-<p>设置副轴内容的对齐方式</p>
-</blockquote>
-<p>align-items—&gt;条目对齐方式</p>
-<ul>
-<li>align-items:flex-end;(副轴的末尾)–&gt;底部</li>
-<li>align-items:center;(副轴的中间)–&gt;中部</li>
-<li>align-items:start;(副轴的顶部)–&gt;顶部</li>
-</ul>
-<p>注意:</p>
-<p>justify-content和align-items属性都设置在父元素中</p>
-<blockquote>
-<p>如果单独为某个子元素设置布局方式</p>
-</blockquote>
-<p>eg:让某个元素显示在副轴底部</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">align-self:flex-end;</div></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/css3 弹性布局/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -1013,8 +638,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

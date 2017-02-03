@@ -6,14 +6,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | bobplay</title>
+  <title>bobplay</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="3D旋转伸出左手:    大拇指指向旋转轴方向,其余四个手指弯曲的方向就是旋转的方向
+transform: rotateX(45deg)/* X方向旋转45度*/
+​    transform: rotateY(45deg)/ Y方向旋转45度/
+transform: rotateZ(45deg)/* Z方向旋转45度*/
+​    
+视角12345/*直接添加给transform:标签 距离 显">
+<meta property="og:type" content="article">
 <meta property="og:title" content="bobplay">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/02/03/transform 3D/index.html">
 <meta property="og:site_name" content="bobplay">
+<meta property="og:description" content="3D旋转伸出左手:    大拇指指向旋转轴方向,其余四个手指弯曲的方向就是旋转的方向
+transform: rotateX(45deg)/* X方向旋转45度*/
+​    transform: rotateY(45deg)/ Y方向旋转45度/
+transform: rotateZ(45deg)/* Z方向旋转45度*/
+​    
+视角12345/*直接添加给transform:标签 距离 显">
+<meta property="og:updated_time" content="2017-01-29T10:21:04.200Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bobplay">
+<meta name="twitter:description" content="3D旋转伸出左手:    大拇指指向旋转轴方向,其余四个手指弯曲的方向就是旋转的方向
+transform: rotateX(45deg)/* X方向旋转45度*/
+​    transform: rotateY(45deg)/ Y方向旋转45度/
+transform: rotateZ(45deg)/* Z方向旋转45度*/
+​    
+视角12345/*直接添加给transform:标签 距离 显">
   
     <link rel="alternative" href="/atom.xml" title="bobplay" type="application/atom+xml">
   
@@ -149,236 +168,157 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-transform 3D" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="3D旋转"><a href="#3D旋转" class="headerlink" title="3D旋转"></a>3D旋转</h2><p>伸出左手:<br>    大拇指指向旋转轴方向,其余四个手指弯曲的方向就是旋转的方向</p>
+<pre><code>transform: rotateX(45deg)/* X方向旋转45度*/
+</code></pre><p>​<br>    transform: rotateY(45deg)/<em> Y方向旋转45度</em>/</p>
+<pre><code>transform: rotateZ(45deg)/* Z方向旋转45度*/
+</code></pre><p>​    </p>
+<h2 id="视角"><a href="#视角" class="headerlink" title="视角"></a>视角</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">/*直接添加给transform:标签 距离 显示屏 1000px*/</div><div class="line">transform:perspective(1000px)</div><div class="line"></div><div class="line">/*直接使用perspective 属性赋值:标签 距离 显示屏 1000px*/</div><div class="line">perspective:1000px 添加到祖先元素中</div></pre></td></tr></table></figure>
+<h2 id="3D样式"><a href="#3D样式" class="headerlink" title="3D样式"></a>3D样式</h2><p>手动开启3D:<br>transform-style: preserve-3d;</p>
+<p>只能加到父元素中</p>
+<h2 id="图片边框"><a href="#图片边框" class="headerlink" title="图片边框"></a>图片边框</h2><ul>
+<li><p>语法<br>border-image: url(“img/border_image_2.png”) 17 / 17px / 17px round;</p>
+<p>​</p>
+<blockquote>
+<p>组成属性</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="transform属性赋值先后问题"><a href="#transform属性赋值先后问题" class="headerlink" title="transform属性赋值先后问题"></a>transform属性赋值先后问题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">div &#123;</div><div class="line">            width: 50px;</div><div class="line">            height: 50px;</div><div class="line">            background-color: pink;</div><div class="line">            transition:all 1s;</div><div class="line">        &#125;</div><div class="line">        div:nth-child(1):hover&#123;</div><div class="line">         /*先选转,然后移动*/</div><div class="line">        transform:rotate(45deg) translate(100px,0);</div><div class="line"></div><div class="line">        &#125;</div><div class="line">        div:nth-child(2):hover&#123;</div><div class="line">         /*先移动 然后先选转*/</div><div class="line">        transform:translate(100px,0) rotate(45deg);</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<h2 id="slice"><a href="#slice" class="headerlink" title="slice"></a>slice</h2><blockquote>
+<p>设置或检索对象的边框背景图的分割方式。<br>该属性指定从上，右，下，左方位来分隔图像，将图像分成4个角，4条边和中间区域共9份，中间区域始终是透明的（即没图像填充），除非加上关键字 fill。 </p>
+</blockquote>
+<h2 id="border-image-repeat属性"><a href="#border-image-repeat属性" class="headerlink" title="border-image-repeat属性"></a>border-image-repeat属性</h2><ul>
+<li>值:<ul>
+<li>stretch(拉伸默认) 或 repeat(重复) 或 round(环绕)<br>stretch： 指定用拉伸方式来填充边框背景图。<br>repeat： 指定用平铺方式来填充边框背景图。当图片碰到边界时，如果超过则被截断。<br>round： 指定用平铺方式来填充边框背景图。图片会根据边框的尺寸动态调整图片的大小直至正好可以铺满整个边框。 (常用的)<br>space： 指定用平铺方式来填充边框背景图。图片会根据边框的尺寸动态调整图片的之间的间距直至正好可以铺满整个边框。 </li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/数组常用的方法/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.565Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/03/transform 3D/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/浏览器对象/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.564Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/渐变,背景,边框/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.563Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2017/02/03/百度新闻广告/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/02/03/innerHtml和innerText区别/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/变量在对象中的体现/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.562Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/百度新闻广告/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.561Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/transform 3D/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.560Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/innerHtml和innerText区别/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.559Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/DOM获取页面元素/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.558Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/DOM创建元素的三种方式/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.557Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/css3 弹性布局/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.556Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
+    <div class="duoshuo"></div>
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/page/2/">Next &raquo;</a>
-    </nav>
-  
+
 
 
           </div>
@@ -401,8 +341,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

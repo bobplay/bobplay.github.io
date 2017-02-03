@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | bobplay</title>
+  <title>bobplay</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="bobplay">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="bobplay">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bobplay">
@@ -151,232 +151,150 @@
           <div id="js-content" class="content-ll">
             
   
-  
+    <article id="post-3D变换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="3D变换"><a href="#3D变换" class="headerlink" title="3D变换"></a>3D变换</h2><blockquote>
+<p>正向</p>
+</blockquote>
+<p>X轴 向右</p>
+<p>Y轴 向下</p>
+<p>Z轴 垂直于浏览器窗口向外</p>
+<blockquote>
+<p>　旋转</p>
+</blockquote>
+<p>左手定则</p>
+<blockquote>
+<p>perspective </p>
+</blockquote>
+<p>特点:<br>近大远小</p>
+<p>元素距离浏览器的间隙</p>
+<p>效果明显   距离小一些</p>
+<p>效果不明显   距离大一些</p>
+<p>可以设置给祖先元素</p>
+<blockquote>
+<p>手动开启3d效果</p>
+</blockquote>
+<p>transform-style</p>
+<ul>
+<li><p>浏览器默认关闭了 3d渲染的效果 太耗性能</p>
+</li>
+<li><p>为3D变换的父元素设置该属性&lt;必须是父元素&gt;</p>
+<p>​</p>
+<p>​</p>
+</li>
+</ul>
+<p>注意:</p>
+<p>父元素如果添加了transform-style属性后再添加透明度,3D效果没有用</p>
+<p>解决办法:</p>
+<p>透明度添加到子元素上</p>
+<blockquote>
+<p>动画属性</p>
+</blockquote>
+<p>animation-name:动画名称</p>
+<p>animation-duration:间隔</p>
+<p>animation-timing-function:动画线型 ease linear steps(走几步)</p>
+<p>animation-play-state  动画状态 running   paused</p>
+<p>animation-fill-mode:forwards;停止的时候保持在某个状态</p>
+<p>animation-dely:延迟时间</p>
+<p>复合写法:</p>
+<p>第一次出现的是间隔时间,第二个是延迟时间</p>
+<p>其他顺序没有要求</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/数组常用的方法/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.565Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/02/03/3D变换/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/浏览器对象/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.564Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+
+
+
+
+
+
+
+  
+    <article id="post-字符串常用的方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.charAt  获取指定索引的字符</p>
+<p>var str = “过年喽嘿哈”</p>
+<p>str = str.charAt(3);//嘿</p>
+<p>2.charCodeAt(索引);获取指定索引的ASCII码值</p>
+<p>var str = “bac”;</p>
+<p>str = str.charCodeAt(1);//97</p>
+<p>3.slice(“开始索引”,”结束索引”)</p>
+<p>从开始索引位置开始截取,到最后索引的前一个索引结束,最后返回的是一个新的字符串</p>
+<p>4.substring(“开始索引”,”结束索引”)</p>
+<p>用法和slice一样</p>
+<p>5.substr(“开始索引”,截取的长度)</p>
+<p>返回的是一个新的字符串</p>
+<ol>
+<li>indexOf(“要找的字符串”,开始索引)</li>
+</ol>
+<p>案例:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var str = &quot;asdad小咖阿达的asas小咖&quot;;</div><div class="line">    var index  =0;</div><div class="line">    var queryStr = &quot;小咖&quot;;</div><div class="line">    while((index = str.indexOf(queryStr,index))!=-1)&#123;</div><div class="line">        console.log(index);</div><div class="line">        index += queryStr.length;</div><div class="line">    &#125;</div><div class="line">    //输出的是5 14</div></pre></td></tr></table></figure>
+<ol>
+<li>转换大小写</li>
+</ol>
+<p>.to(Locale)UpperCase() //转换大写<br>.to(Locale)LowerCase() //转换小写</p>
+<p>8.replace<br>str.replace(“要替换的字符串”,”新的字符串”);<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var str = &quot;asdad小咖阿达的asas小咖&quot;;</div><div class="line">    console.log(str.replace(&quot;asd&quot;, &quot;小可爱&quot;));</div><div class="line">    </div><div class="line">    输出结果:</div><div class="line">            小可爱ad小咖阿达的asas小咖</div></pre></td></tr></table></figure></p>
+<p>9.split</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str = &quot;asdad,小咖阿达的,asas小咖&quot;;</div><div class="line">    console.log(str.split(&quot;,&quot;));</div></pre></td></tr></table></figure>
+<p><img src="img/分隔字符串.png"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/02/03/字符串常用的方法/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/渐变,背景,边框/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.563Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/变量在对象中的体现/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.562Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/百度新闻广告/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.561Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/transform 3D/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.560Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/innerHtml和innerText区别/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.559Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/DOM获取页面元素/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.558Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/DOM创建元素的三种方式/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.557Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/css3 弹性布局/" class="archive-article-date">
-  	<time datetime="2017-02-03T06:24:16.556Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
-  
-
-    
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/page/2/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
     </nav>
   
 
@@ -400,9 +318,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
